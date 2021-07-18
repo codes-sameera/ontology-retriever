@@ -34,3 +34,18 @@ Body:<br>
     "http://purl.obolibrary.org/obo/IAO_0000115"
   ]
 }
+```
+If there is a problem with the database, `INTERNAL_SERVER_ERROR` status is returned<br>
+If there is no ontology for the given id, `BAD_REQUEST` status is returned<br>
+
+### Developer Notes
+- The CI
+  - Builds on every commit to the master and on every pull request to the master
+  - Executes maven build; compilation and unit tests
+  - Builds a docker images and publishes to a repository in docker hub; this image is used in ontology-retriever-deployment
+- Aspect **(spring aop)** is used for logging API calls made to the application
+- Different model is used for storage to the database and for API communication
+- For mapping and converting objects to different models, **MapStruct** library is used, to avoid writing mapping code
+- Lombok is used to avoid boilerplate code
+
+#### Please check [ontology-retreiver-deployment](https://github.com/codes-sameera/ontology-retriever-deployment/blob/main/README.md) for installing and using this application
