@@ -23,7 +23,7 @@ jobs:
     - name: Build docker and publish
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: sameeracodes/ontology
+        image: sameeracodes/ontology-retriever
         tags: latest
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
