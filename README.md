@@ -48,4 +48,4 @@ If there is no ontology for the given id, `BAD_REQUEST` status is returned<br>
 - For mapping and converting objects to different models, **MapStruct** library is used, to avoid writing mapping code
 - Lombok is used to avoid boilerplate code
 
-#### Please check [ontology-retreiver-deployment](https://github.com/codes-sameera/ontology-retriever-deployment/blob/main/README.md) for installing and using this application
+#### Please check [ontology-retriever-deployment](https://github.com/codes-sameera/ontology-retriever-deployment/blob/main/README.md) for installing and using this application
