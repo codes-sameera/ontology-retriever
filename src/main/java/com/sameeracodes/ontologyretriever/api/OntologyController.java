@@ -29,7 +29,7 @@ public class OntologyController {
 
   @PostMapping("/ontologies")
   @ResponseStatus(HttpStatus.CREATED)
-  public void addTransaction(@RequestBody Ontology ontology) {
+  public void addOntology(@RequestBody Ontology ontology) {
     ontologyService.saveOntology(ontology);
   }
 
